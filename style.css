@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+::selection{
+    color: blue;
+    background-color: white;
+   }
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 90vh;
+    /* width: 100vw; */
+    background-image: url(assets/man.jpg);
+}
+
+.opa {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: ; */
+    /* background-color: yellow; */
+    margin-top: 10px;
+}
+
+.logo img {
+
+    width: 150px;
+    /* background-color: yellow; */
+
+}
+.logo img:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.1s cubic-bezier(0.175, 0.885, 2.32, 5) ;
+}
+.eng {
+    background-color: rgba(23, 23, 23, 0.2);
+
+
+}
+
+.sign {
+    background-color: red;
+    /* box-shadow: inset 0px 0px 2px 2px black;
+    ; */
+
+}
+.sign:hover,.eng:hover{
+    border: 1px solid red;
+    transition: all 0.1s linear ;
+    transform: scale(1.2);
+
+}
+
+
+@media (max-width:500px) {
+    .logo img {
+        width: 80px;
+    }
+
+}
+
+button {
+    padding: 7px 15px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+
+@media (max-width:500px) {
+    button {
+        padding: 5px 8px;
+        font-size: 0.5em;
+
+    }
+
+}
+
+
+
+/* NAV END */
+
+
+/* MAIN CONTENT START */
+
+.content {
+    text-align: center;
+    color: white;
+    /* background-color: yellow; */
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content div {
+    margin-top: 20px;
+}
+.content div:hover {
+transform: scale(0.9);
+transition: all 0.2s ease-in-out;
+
+}
+
+
+.one {
+    font-size: 3em;
+    font-family: 'Poppins';
+    font-weight: bolder;
+
+}
+
+.second {
+    font-size: 1.5em;
+    font-family: 'Poppins';
+    font-weight: 600;
+    letter-spacing: 0.10em;
+}
+
+.third {
+    font-size: 1.2em;
+    font-family: 'poppins';
+    font-weight: 600;
+}
+
+@media (max-width:1100px) {
+    .one {
+        font-size: 2em;
+        font-family: 'Poppins';
+        font-weight: bolder;
+    }
+}
+
+@media (max-width:500px) {
+    .one {
+        font-size: 1.5em;
+        font-family: 'Poppins';
+        font-weight: bolder;
+    }
+}
+
+@media (max-width:500px) {
+    .second {
+        font-size: 1em;
+        font-family: 'Poppins';
+        font-weight: 500;
+    }
+}
+
+@media (max-width:500px) {
+    .third {
+        font-size: 1em;
+        font-family: 'Poppins';
+        font-weight: 500;
+    }
+}
+
+@media (max-width:500px) {
+    .content {
+        padding-top: 50px;
+    }
+}
+
+.contentbtn input {
+    background-color: rgba(23, 23, 23, 0.2);
+    padding: 15px 60px;
+    border: 1px solid white;
+    /* opacity: 0.4; */
+    font-size: 20px;
+    color: white;
+
+}
+
+@media (max-width:500px) {
+    .contentbtn input {
+        padding: 7px 25px;
+        font-size: 10px;
+    }
+}
+
+.contentbtn button {
+    background-color: rgb(127, 12, 12);
+    padding: 15px 50px;
+    border: none;
+    /* opacity: 0.4; */
+    font-size: 20px;
+
+}
+.contentbtn button:hover{
+    background-color: red;
+}
+.contentbtn input:hover{
+    background-color: rgba(15, 13, 13, 0.707);
+    color: white;
+    /* font-weight: bold; */
+}
+
+@media (max-width:500px) {
+    .contentbtn button {
+        padding: 7px 25px;
+        font-size: 10px;
+    }
+}
+
+
+/* First Part Done */
+
+
+.separation {
+    height: 5px;
+    background-color: gray;
+}
+
+/* Second Part Start */
+
+
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+    align-items: center;
+    height: 60vh;
+}
+
+.video {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+
+}
+
+.im {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.vi {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+@media (min-width:1000px) {
+    .video video {
+         width: 250px;
+     }
+     .video img {
+        height: 250px;
+    }
+ }
+@media (max-width:1000px) {
+    .video video {
+         width: 250px;
+     }
+     .video img {
+        height: 250px;
+    }
+ }
+@media (max-width:875px) {
+    .video video {
+         width: 170px;
+     }
+     .video img {
+        height: 170px;
+    }
+ }
+ @media (max-width:425px) {
+   .video video {
+        width: 150px;
+    }
+    .video img {
+        height: 150px;
+    }
+}
+ @media (max-width:350px) {
+   .video video {
+        width: 180px;
+    }
+    .video img {
+        height: 180px;
+    }
+}
+
+@media (max-width:300px) {
+    .video video {
+        width: 160px;
+    }
+    .video img {
+        height: 160px;
+    }
+}
+
+@media (max-width:270px) {
+    .video video {
+        width: 150px;
+    }
+    .video img {
+        height: 150px;
+    }
+}
+.con {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: poppins;
+    flex-wrap: wrap;
+
+
+}
+
+.con h2 {
+    font-size: 30px;
+}
+
+.con p {
+    font-size: 18px; 
+    
+}
+@media (max-width:1000px) {
+    .con h2 {
+        font-size: 25px;
+    }
+    .con p {
+        font-size: 10px;
+    }
+}
+@media (max-width:589px) {
+    .con h2 {
+        font-size: 16x;
+    }
+    .con p {
+        font-size: 7px;
+    }
+}
+@media (max-width:550px) {
+    .con h2 {
+        font-size: 24px;
+    }
+    .con p {
+        font-size: 8px;
+    }
+}
+
+
+
+.FAQ{
+    color: white;
+    margin:60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.FAQ h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 15px;
+}
+.FAQ .boxes{
+    background-color: #2d2d2d;
+    padding: 25px  ;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+
+.FAQ .boxes:hover{
+    transition: all 0.4s ease-in-out ;
+    background-color:#414141;
+    box-shadow:  12px 0px 4px 4px #414141;
+
+}
+
+.boxes p{
+    font-size: 24px;
+}
+@media(max-width:500px){
+    .boxes p{
+        font-size: 13px;
+    }
+    .FAQ .boxes{
+        background-color: #2d2d2d;
+        padding: 15px  ;
+        width: 75%;
+    }
+    .FAQ h2{
+        font-size: 24px;
+    }
+    
+}
+
+
+
+
